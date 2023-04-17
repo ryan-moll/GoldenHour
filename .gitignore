@@ -70,3 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Other stuff
+*.meta
+*.csproj
+*.sln
+/Assets/Animations/*
+/Assets/CasualGameBGM05/*
+/Assets/CasualGameSounds/*
+/Assets/Fonts/*
+/Assets/Pixel Adventure 1/*
+/Assets/TextMesh Pro/*

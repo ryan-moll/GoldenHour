@@ -73,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.dashing;
             dashState = DashState.right;
             sprite.flipX = false;
+            this.transform.localScale = new Vector3(1, (float)0.8, 1);
         }
         else if (dirX - lastDirX < -0.5 && 
             isGrounded() && 
@@ -83,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.dashing;
             dashState = DashState.left;
             sprite.flipX = true;
+            this.transform.localScale = new Vector3(1, (float)0.8, 1);
         }
 
         // If mid-dash keep applying force 
@@ -132,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
         activeSpeed = speed;
         state = MovementState.running;
         dashState = DashState.still;
+        this.transform.localScale = Vector3.one;
     }
 
     private MovementState updateAnimationState()
